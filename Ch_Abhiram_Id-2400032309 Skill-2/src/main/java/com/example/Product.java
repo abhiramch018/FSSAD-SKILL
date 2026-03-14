@@ -1,7 +1,7 @@
 
 package com.example;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name="products")
@@ -65,3 +65,4 @@ public class Product {
         this.quantity=quantity;
     }
 }
+

@@ -1,34 +1,25 @@
 
 package com.example;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Student {
 
-    private int studentId;
+    private int id;
     private String name;
-    private String course;
+    private String branch;
     private int year;
 
-    // Constructor Injection
-    public Student(int studentId, String name, String course, int year) {
-        this.studentId = studentId;
-        this.name = name;
-        this.course = course;
-        this.year = year;
-    }
-
-    // Setter Injection
-    public void setCourse(String course) {
-        this.course = course;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
+    public Student() {
+        this.id = 309;
+        this.name = "Ch Abhiram";
+        this.branch = "CSE";
+        this.year = 2;
     }
 
     public void display() {
-        System.out.println("Student ID: " + studentId);
-        System.out.println("Name: " + name);
-        System.out.println("Course: " + course);
-        System.out.println("Year: " + year);
+        System.out.println(id + " " + name + " " + branch + " " + year);
     }
 }
+

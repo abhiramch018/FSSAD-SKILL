@@ -13,6 +13,10 @@ public class ProductController {
     public ProductController(ProductRepository repo){
         this.repo = repo;
     }
+    @PostMapping("/add")
+    public Product addProduct(@RequestBody Product product){
+        return repo.save(product);
+    }
 
     @GetMapping("/category/{category}")
     public List<Product> getByCategory(@PathVariable String category){

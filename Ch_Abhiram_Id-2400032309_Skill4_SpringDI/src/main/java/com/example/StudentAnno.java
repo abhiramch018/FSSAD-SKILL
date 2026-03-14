@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class StudentAnno {
 
-    @Value("2400032309")
+    @Value("309")
     private int studentId;
 
     @Value("Ch Abhiram")
