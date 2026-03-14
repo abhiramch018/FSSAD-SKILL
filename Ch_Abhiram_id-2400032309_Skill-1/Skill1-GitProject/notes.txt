@@ -1,0 +1,3 @@
+Git Version Control - Skill 1
+This file demonstrates Git tracking and commits.
+Branches: feature-update and bug-fix.
